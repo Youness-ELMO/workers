@@ -1,0 +1,20 @@
+Nombre de table 
+
+Nous allons pour ce faire modéliser successivement les stagiaires , les employés du centre , les formateurs , les salles par les classes Stagiaire , Employé , Formateur Salle .
+
+Nous allons factoriser les attributs communs aux stagiaires et aux employés dans une classe Personne . Ainsi la classe Stagiaire et la classe Employe vont hériter classe Personne 
+	-La classe Formateur est la classe fille de la classe Employe
+
+
+
+Q1 . Réaliser l'ensemble des classes précédentes en choisissant pour chacun des attribut le type convenable . Les attributs sont tous privés 
+d'où la nécessité d'implémenter des propriétés pour chacun des attributs
+
+Q2 . Nous allons réaliser une interface Icentre comportant les différentes méthodes à implementer :
+
+ 1. Int Calculer Age ( DateTime dateCourante ) : cette méthode prend en paramètre la date courante à partir de laquelle l'age sera calculé et retourne l'age de la personne , cette méthode sera implémentée par la classe Personne 
+2. Double calculTotalSalair ( double remHeure ) : cette méthode paramètre la rémunération par beure et donnera en retour le salaire méthode sera total ( salaire + remHeure nbrHeureSup ) , implémenté par la classe Emplove cette 
+3. String toString0 : cette méthode doit retourner le nom et prénom le matricule séparé séparé par une tabulation et concaténé avec par ' : ' , cette méthode sera implémentée par la classe Personne 
+4. Bool equals ( Salle s ) : cette méthode permet de comparer deux salles en ayant comme critère le nombre de table puis le type de la salle . Réaliser l'interface Icentre , et implémenter ces méthodes dans les classes correspondantes . 
+
+Q3 . Réaliser un menu qui permet de calculer l'âge d'une personne , de calculer le salaire total d'an employé et de vérifier l'égalité de deux salles
